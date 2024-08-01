@@ -16,7 +16,7 @@ const Home = () => {
     try {
       const apiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${qcity},IN&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${qcity},IN&appid=${apiKey}`
       );
 
       if (!response.ok) {
